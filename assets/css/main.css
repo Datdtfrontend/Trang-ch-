@@ -1,0 +1,335 @@
+.header{
+    width: 100%;
+}
+/*header train*/
+.header__train__info{
+    height: 55px;
+    border-bottom: 1px solid #000;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 200px;
+    padding-right: 200px;
+
+}
+.header__info__active{
+    position: relative;
+    width: 143px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*logo des*/
+.image__header__icon{
+    display: flex;
+    flex-direction: row;
+    width: 160px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+}
+i.app-info__logo.fa-solid.fa-train {
+    display: flex;
+    font-size: 18px;
+}
+.app-info__logo{
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: white;
+    margin-right: 16px;
+    background-color: #4e3494;
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+}
+.image__content{
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+/*avatar online*/
+.avatar__online{
+    background-color: var(--green--color);
+    border: 1.5px solid;
+    border-color: var(--white--color);
+    border-radius: 8px;
+    height: 8px;
+    width: 8px;
+    position: absolute;
+    left: 45px;
+    top: 33px;
+}
+.full__option{
+    display: flex;
+    margin-left: 5px;
+    font-size: 13px;
+    font-weight: 500;
+    flex-direction: row;
+    align-items: center;
+}
+.name__account{
+    margin-left: 5px;
+}
+/*Upload ava*/
+.avatar-wrapper{
+	position: relative;
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 1px 1px 15px -5px black;
+	transition: all .3s ease;
+}
+.avatar-wrapper:hover{
+	transform: scale(1.05);
+	cursor: pointer;
+}
+.avatar-wrapper:hover .profile-pic{
+	opacity: 0.5;
+}
+.header__info__active:hover .avatar__online{
+    opacity: 0.5;
+}  
+.profile-pic {
+    height: 30px;
+	width: 30px;
+	transition: all .3s ease;
+}
+.profile-pic::after{
+    font-family: FontAwesome;
+    content: "\f007";
+    top: 0; left: 0;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    font-size: 190px;
+    background: #ecf0f1;
+    color: #34495e;
+    text-align: center;
+}
+.upload-button{
+	position: absolute;
+	top: 0; left: 0;
+	height: 30px;
+	width: 30px;
+}
+.fa-arrow-circle-up{
+    position: absolute;
+    font-size: 30px;
+    top: 0px;
+    left: 0;
+    text-align: center;
+    opacity: 0;
+    transition: all .3s ease;
+    color: #34495e;
+}
+.upload-button:hover .fa-arrow-circle-up{
+    opacity: 1;
+}
+/*taskbar*/
+.title__window{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 16px;
+    margin-left: 105px;
+}
+.common__task__bar{
+    font-size: 14px;
+    margin-right: 45px;
+    color: #9e9e9e;
+    font-weight: 600;
+    height: 25px;
+}
+.station__page:hover, 
+.company__page:hover{
+    color: #422f85;
+}
+.company__page:hover .fa-change-padding,
+.station__page:hover .fa-change-padding{
+    color: #422f85;
+}
+.fa-change-padding{
+    padding-right: 8px;
+    color: #545454;
+    font-weight: 600;
+}
+.choosing__page{
+    color: #422f85;
+    border-bottom: 3px solid #422f85;
+}
+.choosing__page .fa-change-padding{
+    color: #422f85;;
+}
+/*infomation*/
+.icon__information{
+    position: absolute;
+    width: 190px;
+    height: 160px;
+    background-color: white;        
+    top: 51px;
+    right: 68px;
+    box-shadow: 0 1px 3.125rem 0 rgba(0, 0, 0, 0.229);
+    border-radius: 10px;
+    display: none   ;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    transform-origin: top right;
+    animation: FadeOut ease-in 0.3s;
+    z-index: 1;
+}
+
+.icon__information::before{
+    content: "";
+    border-width: 8px 18px;
+    border-style: solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    position: absolute;
+    right: 19px;
+    top: -16px;
+}
+.icon__information::after{
+    content: "";
+    border-width: 10px 60px;
+    border-style: solid;
+    border-color: transparent transparent transparent transparent;
+    position: absolute;
+    right: 8px;
+    top: -16px;
+    cursor: pointer;
+}
+.info__element{
+    margin: 12px 0px;
+    padding-left: 10px;
+    font-size: 1.4rem;
+}
+.header__info__active:hover .icon__information{
+    display: block
+}
+.info__element:hover{
+    opacity: 0.5;
+}
+/*Container*/
+.container{
+    margin: auto;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}   
+.filter__content{
+    font-size: 13px;
+    font-family: "Roboto";
+    font-weight: 600;
+}
+.choosing__bar{
+    font-size: 12px;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-family: "Roboto";
+    margin-top: 5px;
+}
+.change__width{
+    width: 150px;
+}
+.form-check-input{
+    font-size: 22px;
+    color: #422f85;
+}
+.form-check-input:checked{
+    background-color: #422f85;
+    border-color: #422f85;
+}
+.change__form__inline{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.change-form-control{
+    height: 45px;
+    font-size: 16px;
+}
+.changebtn{
+    height: 45px;
+    background-color: #422f85;
+    color: white;
+    font-weight: 500;
+    width: 65px;
+    border: #422f85;
+    font-size: 14px;
+}
+.changebtn:hover{
+    background-color: white;
+    color: #422f85;
+    font-weight: 700;
+    border: 1px solid #422f85;
+}
+/*change sort button*/
+.change__btn{
+    font-weight: 600;
+    width: 180px;
+    height: 27px;
+    border-radius: 0px;
+    background-color: #422f85;
+    font-size: 12px;
+}
+.change__btn:hover{
+    background-color: white;
+    color: #422f85;
+}
+.btn.show{
+    color: #422f85;
+    background-color: white;
+    border-color: #422f85;
+}
+ul.dropdown-menu.show {
+    width: 180px;
+    border-radius: 0px;
+    font-size: 12px;
+}
+ul.dropdown-menu{
+    top: -4px;
+}
+
+.total__section{
+    font-size: 12px;
+    font-weight: 700;
+    font-family: 'Roboto';
+}
+.sortby__content{
+    font-size: 13px;
+    font-weight: 700;
+    font-family: 'Roboto';
+}
+
+.padding__train-change{
+    padding-left: 40px;
+    margin-right: 70px;
+}
+
+.list__train-section {
+    position: relative;
+    width: 785px;
+    height: 45px;
+    box-shadow: 0 1px 1px rgb(0, 0, 0, 0.2);
+    border-left: 5px solid #422f85;
+}
+.size-of__content{
+    font-size: 12px;
+    font-weight: 700;
+    font-family: 'Roboto';
+    color: #000;
+}
+.size__icon-change{
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: -10px;
+    color: #422f85;
+}
+
+
+.list__train-section:hover{
+    left: 5px;
+}
